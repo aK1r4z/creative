@@ -26,6 +26,3 @@ scoreboard players set init system 1
 
 # 调用世界加载函数
 function cr:world/load
-
-# 调试信息
-say is init
