@@ -1,17 +1,17 @@
 #> cr:system/param/hint
 # @within function cr:system/param
 #
-# 提示玩家修补系统参数
+# 提示玩家修复系统参数
 
 function cr:system/string/message/system_prefix
-function cr:system/string/_append {"text": ',{"text": "系统参数残缺，请修补以下系统参数（可点击）"}'}
+function cr:system/string/_append {"text": ',{"text": "系统参数缺少或不合理，请修复以下系统参数（可点击）"}'}
 function cr:system/string/send_all
 
 function cr:system/string/message/system_prefix
-function cr:system/string/_append {"text": ',{"text": "[地皮尺寸] ", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set %PLOT_SIZE% const "}, "hoverEvent": {"action": "show_text", "contents": {"text": "点击获取指令"}}}'}
-function cr:system/string/_append {"text": ',{"text": "[测试参数] ", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set %PLOT_SIZE% const "}, "hoverEvent": {"action": "show_text", "contents": {"text": "点击获取指令"}}}'}
+function cr:system/string/_append {"text": ',{"text": "[地皮尺寸] ", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set %PLOT_SIZE% const "}, "hoverEvent": {"action": "show_text", "contents": {"text": "地皮的边长。最小为 16 ，最大为 128 。"}}}'}
+function cr:system/string/_append {"text": ',{"text": "[行道宽度] ", "clickEvent": {"action": "suggest_command", "value": "/scoreboard players set %SIDE_SIZE% const "}, "hoverEvent": {"action": "show_text", "contents": {"text": "地皮间隔长度。最小为 5 ，最大为 10 。"}}}'}
 function cr:system/string/send_all
 
 function cr:system/string/message/system_prefix
-function cr:system/string/_append {"text": ',{"text": "修补完毕后，输入 /function cr:setup 即可启动系统"}'}
+function cr:system/string/_append {"text": ',{"text": "修复完毕后，输入 /function cr:setup 即可启动系统"}'}
 function cr:system/string/send_all
