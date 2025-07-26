@@ -3,8 +3,6 @@
 #
 # 在重新加载时被调用
 
-
-
 # 检测是否为初次加载
 execute if function cr:test/is_init run function cr:init
 
