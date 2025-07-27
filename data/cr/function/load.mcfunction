@@ -16,6 +16,13 @@ scoreboard objectives add entity_plot_z dummy "实体当前所属的地皮的 Z 
 ## 玩家变量
 scoreboard objectives add pid dummy "玩家编号"
 scoreboard objectives add permission dummy "玩家权限等级"
+scoreboard objectives add plot_claimed dummy "玩家已申请地块数量"
+
+### 玩家命令
+scoreboard objectives add claim trigger "申请地块"
+
+scoreboard objectives add gamemode trigger "游戏模式"
+scoreboard objectives add gm trigger "游戏模式"
 
 ### 玩家行为判据
 scoreboard objectives add leave_game custom:leave_game "玩家退出游戏"
