@@ -8,12 +8,7 @@
 # 在玩家进入地皮时被触发
 
 # 获取地皮信息
-data modify storage cr:temp macro set value {}
-
-execute store result storage cr:temp macro.x int 1 run scoreboard players get x temp
-execute store result storage cr:temp macro.z int 1 run scoreboard players get z temp
-
-function cr:system/plot/_get_plot with storage cr:temp macro
+function cr:system/plot/get_plot
 
 # 检测地皮是否已被认领
 execute store success score owned temp if data storage cr:temp plot.owner
