@@ -5,3 +5,6 @@
 
 # 玩家功能
 execute as @a run function cr:player/second_5
+
+# 重置临时变量
+scoreboard players reset * temp

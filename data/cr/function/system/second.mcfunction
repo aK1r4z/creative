@@ -14,9 +14,6 @@ scoreboard players operation second_5 system %= #5 const
 execute if score second_5 system matches 0 run function cr:system/second_5
 
 
-# 重置临时变量
-scoreboard players reset * temp
-
 
 # 重置计时器
 scoreboard players set tick system 0
