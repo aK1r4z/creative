@@ -3,8 +3,6 @@
 #
 # 在系统启动后每秒被调用
 
-# 玩家功能
-
 # 系统计时器
 scoreboard players add second system 1
 execute if score second system matches 60.. run scoreboard players set second system 0

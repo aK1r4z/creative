@@ -3,8 +3,5 @@
 #
 # 在系统启动后每 5 秒被调用
 
-# 玩家功能
-execute as @a run function cr:player/second_5
-
 # 重置临时变量
 scoreboard players reset * temp
