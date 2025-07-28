@@ -1,5 +1,7 @@
 #> cr:world/plot/place_plot_sign
-# @[TODO]
+# @within function
+#   cr:world/plot/reset
+#   cr:world/plot/update
 # @param score{temp[sign, x, z]}
 #
 # 为地皮放置标识牌

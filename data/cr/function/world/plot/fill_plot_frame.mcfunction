@@ -1,5 +1,7 @@
 #> cr:world/plot/fill_plot_frame
-# @[TODO]
+# @within function
+#   cr:world/plot/reset
+#   cr:world/plot/update
 # @param score{temp[x, z]}
 #
 # params should be plot position with zero offset
