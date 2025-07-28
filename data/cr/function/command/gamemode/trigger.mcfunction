@@ -4,6 +4,9 @@
 #
 # 游戏模式命令被触发
 
+# 修正分数
+execute if score @s gamemode matches -2147483647 run scoreboard players set @s gamemode 1
+
 # 修改游戏模式
 execute if score @s gamemode matches 0 run function cr:command/gamemode/survival
 execute if score @s gamemode matches 1 run function cr:command/gamemode/creative
