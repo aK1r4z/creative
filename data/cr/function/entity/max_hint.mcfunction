@@ -4,5 +4,7 @@
 # 发出当前地皮实体过多的提示
 
 function cr:system/string/message/system_prefix
-function cr:system/string/_append {text: ',{"text": "位于 X "}, {"score": {"objective": "temp", "name": "x"}}, {"text": " Z "}, {"score": {"objective": "temp", "name": "z"}}, {"text": " 的领地中的实体数量已达上限"}'}
-function cr:system/string/send_all
+function cr:system/string/_append {text: ',{"text": "当前领地中的实体数量已达上限"}'}
+function cr:system/string/_send {selector: "@a if score @s entity_plot_x = x temp if score @s entity_plot_z = z temp"}
+
+return 1
