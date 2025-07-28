@@ -7,4 +7,4 @@
 gamemode spectator @s[scores={permission=..3}]
 
 # 检测玩家进入地皮
-execute if function cr:entity/is_in_plot run function cr:player/join_plot
+execute if function cr:entity/is_in_plot run function cr:player/not_in_plot/join_plot
