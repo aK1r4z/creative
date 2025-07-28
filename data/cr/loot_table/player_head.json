@@ -1,0 +1,19 @@
+{
+    "pools": [
+        {
+            "entries": [
+                {
+                    "type": "item",
+                    "name": "player_head"
+                }
+            ],
+            "rolls": 1
+        }
+    ],
+    "functions": [
+        {
+            "function": "fill_player_head",
+            "entity": "this"
+        }
+    ]
+}
