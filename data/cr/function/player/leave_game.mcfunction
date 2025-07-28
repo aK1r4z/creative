@@ -5,6 +5,3 @@
 
 # 重置分数
 scoreboard players set @s leave_game 0
-
-# 调试信息
-say @s rejoined
