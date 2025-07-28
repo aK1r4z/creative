@@ -4,10 +4,10 @@
 # 在系统启动后每刻被调用
 
 # 实体功能
-execute as @e[type=!player] if predicate cr:in_overworld run function cr:entity/tick
+execute as @e[type=!player] at @s if predicate cr:in_overworld run function cr:entity/tick
 
 # 玩家功能
-execute as @a if predicate cr:in_overworld run function cr:player/tick
+execute as @a at @s if predicate cr:in_overworld run function cr:player/tick
 
 # 系统秒
 scoreboard players add tick system 1

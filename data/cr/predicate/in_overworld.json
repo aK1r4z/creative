@@ -1,6 +1,9 @@
 {
-    "condition": "location_check",
+    "condition": "entity_properties",
+    "entity": "this",
     "predicate": {
-        "dimension": "overworld"
+        "location": {
+            "dimension": "overworld"
+        }
     }
 }
