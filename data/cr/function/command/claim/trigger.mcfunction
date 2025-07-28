@@ -8,7 +8,7 @@
 function cr:command/claim/reset
 
 # 检测玩家申请地块数量
-execute if score @s plot_claimed >= %MAX_CLAIM_COUNT% const run return run function cr:command/claim/max_hint
+execute if score @s plot_claimed >= @s max_plot_claimed run return run function cr:command/claim/max_hint
 
 # 获取地皮信息
 function cr:entity/get_plot_pos
@@ -18,7 +18,7 @@ function cr:system/plot/get_plot
 execute if data storage cr:temp plot.owner run return run function cr:command/claim/claimed_hint
 
 # 重置并占领当前地皮
-function cr:world/plot/reset
-function cr:player/claim
-
+function cr:player/plot/claim
 function cr:command/claim/success_hint
+
+function cr:world/plot/reset
