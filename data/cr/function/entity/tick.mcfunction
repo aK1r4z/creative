@@ -12,3 +12,7 @@ execute if entity @s[type=!player] unless function cr:entity/is_in_plot run retu
 
 # 实体生成检测
 execute unless score @s entity_plot_x matches -2147483648..2147483647 unless score @s entity_plot_z matches -2147483648..2147483647 if function cr:entity/spawn run return run function cr:void
+
+# 实体类型检测 #
+# 经验球
+execute if entity @s[type=experience_orb] run function cr:entity/experience_orb/tick
