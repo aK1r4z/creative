@@ -1,0 +1,24 @@
+{
+    "criteria": {
+        "tick": {
+            "trigger": "tick"
+        }
+    },
+    "display": {
+        "announce_to_chat": false,
+        "background": "minecraft:textures/gui/advancements/backgrounds/adventure.png",
+        "description": {
+            "translate": "advancements.creative.root.description",
+            "fallback": "发挥想象力，尽情创作"
+        },
+        "icon": {
+            "id": "oak_planks",
+            "count": 64
+        },
+        "show_toast": false,
+        "title": {
+            "translate": "advancements.creative.root.title",
+            "fallback": "创造"
+        }
+    }
+}
